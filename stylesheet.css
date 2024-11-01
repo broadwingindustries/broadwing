@@ -30,8 +30,20 @@ body {
 	font-family: "Fira Code", monospace;
 	font-optical-sizing: auto;
 	font-weight: 400;
-	font-size: calc(2.5em + 1vw);
 }
+
+@media screen and (min-width: 500px) {
+  body {
+  	font-size: calc(18px + 1vw);
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+  	font-size: calc(2.5em + 1vw);
+  }
+}
+
+	
 
 img.logo {
 	filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 4px 12px);

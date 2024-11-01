@@ -30,7 +30,7 @@ body {
 	font-family: "Fira Code", monospace;
 	font-optical-sizing: auto;
 	font-weight: 400;
-	font-size: calc(14.5px + 0.75vw);
+	font-size: calc(16.5px + 0.75vw);
 }
 
 img.logo {

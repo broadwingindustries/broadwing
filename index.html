@@ -1,0 +1,111 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+<title>Broadwing&reg; Industries</title>
+<meta name="description" content="A Limited Company.">
+</head>
+<body>
+
+<div class="eagle_in_flight_background">
+<video autoplay muted loop id="myVideo">
+  <source src="eagle_in_flight.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="broadwing_page">
+
+<section class="page_section">
+	<img class="logo" src="logo.png">
+</section>
+
+<section class="page_section">
+	<p>
+		<a href="mailto:company@broadwingindustri.es">company@broadwingindustri.es
+		</a>
+	</p>
+</section>
+
+<section class="page_section">
+	<ul>
+		<li><strong>Broadwing® Industries</strong> LTD</li>
+		<li><span class="numbers">128</span> City Road</li>
+		<li>London</li>
+		<li>EC<span class="numbers">1</span>V <span class="numbers">2</span>NX</li>
+	</ul>
+</section>
+
+<section class="page_section">
+	<p>
+		<small>
+			Company Number #<strong><span class="numbers"><u>15310752</u></span></strong>
+		</small>
+	</p>
+</section>
+
+<section class="page_section">
+	<p class="latin">
+		
+<span id="type_plc"></span>
+<script>
+(function iife() {
+    "use strict";
+    var slogans = [
+        "Aut",
+        "Inveniemus",
+        "Viam",
+        "Aut",
+        "Faciemus."
+    ];
+    var el = document.getElementById("type_plc");
+    var counter = 0;
+    var waitTime = 500;
+    var pauseTime = 2000;
+    var i = 0;
+    var intervalId;
+
+    function showText(string, delay) {
+        function addChar() {
+            var characters = document.querySelectorAll('.fade');
+            for (var theChar = 0; theChar < characters.length; theChar++) {
+                characters[theChar].classList.remove('fade');
+            }
+
+            el.innerHTML += "<span class='fade'>" + string.charAt(i) + "</span>";
+            i += 1;
+
+            if (i < string.length) {
+                return;
+            }
+
+            window.clearInterval(intervalId);
+
+            if (i === string.length) {
+                showText(slogans[counter], pauseTime);
+            }
+
+            if (i > string.length) {
+                el.innerHTML = "";
+                i = 0;
+                counter = (counter + 1) % slogans.length;
+                showText(slogans[counter], waitTime);
+            }
+        }
+        intervalId = window.setInterval(addChar, delay);
+    }
+    showText(slogans[counter], waitTime);
+}());
+
+</script>
+ &nbsp;
+	</p>
+
+</section>
+
+</div>
+
+</body>
+
+</html>

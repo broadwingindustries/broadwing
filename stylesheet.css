@@ -9,7 +9,25 @@ max-height: 100vh;
 width: 100vw;
 max-width: 100vw;
 box-sizing: border-box;
+color: white;
+font-family: "Fira Code", monospace;
+font-optical-sizing: auto;
+font-weight: 400;
+text-align: center;
 }
 body img {
-max-width: 90%;
+	width: 90%;
+	max-width: 500px;
+}
+.numbers {
+	font-family: Georgia;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: none;
+}
+
+a {
+	color: white;
 }

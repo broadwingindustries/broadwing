@@ -1,28 +1,24 @@
 body {
 margin: 0;
-background: #000000;
-display: flex;
-align-items: center;
-justify-content: space-around;
-height: 100%;
-max-height: 100%;
-width: 100%;
-max-width: 100%;
 color: white;
 font-family: "Fira Code", monospace;
 font-optical-sizing: auto;
 font-weight: 400;
 text-align: center;
-overscroll-behavior: none;
+height: 100vh;
 }
 body * {
 	box-sizing: border-box;
 }
-page {
-	overscroll-behavior: none;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 20vh 0 0 0;
+
+.page {
+	height: 100%;
+	display: flex;
+	background: black;
+	flex-direction: column;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
 }
 body img {
 	width: 90%;

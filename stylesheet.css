@@ -8,12 +8,14 @@ height: 100vh;
 max-height: 100vh;
 width: 100vw;
 max-width: 100vw;
-box-sizing: border-box;
 color: white;
 font-family: "Fira Code", monospace;
 font-optical-sizing: auto;
 font-weight: 400;
 text-align: center;
+}
+body * {
+	box-sizing: border-box;
 }
 body img {
 	width: 90%;
